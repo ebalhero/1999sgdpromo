@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Premium Moments - Exclusive 9 Hours Wedding Photo &amp; Video Coverage</title>
+<meta name="description" content="Exclusive 9 hours wedding photo &amp; video coverage, SGD 2499. No hidden charge, no extra charge. Trusted by 100+ couples.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:regularnormal|Roboto+Mono:regularnormal|Cormorant+Garamond:italic" rel="stylesheet" type="text/css">
+<style>
+@font-face { font-family: 'Old Scientific Illustration'; src: url('https://static.showit.co/file/Mmg4fyoO-astn3t5jGL9fw/111471/oldscientificillustration.woff'); }
+
+/* ---------- design tokens (taken from the original template) ---------- */
+:root {
+  --ink: #2E1B14;          /* all text + borders */
+  --cream: #FAF7EB;        /* main section background */
+  --cream-2: #FEFCEB;      /* hero view 2 */
+  --sand: #DBD3C2;         /* hero view 3 */
+  --mist: #CED2D4;         /* hero view 1 / footer grey-blue / button fill */
+  --night: #000;           /* packages + inquiry sections */
+  --script: 'Old Scientific Illustration', 'Cormorant Garamond', serif;
+  --serif: 'Cormorant Garamond', serif;
+  --mono: 'Roboto Mono', monospace;
+  --w: 1200px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { background: var(--cream); color: var(--ink); font-family: var(--serif); font-size: 18px; line-height: 1.6; overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+.wrap { width: min(var(--w), 100% - 40px); margin: 0 auto; }
+
+/* type roles: heading (script) / title (serif) / paragraph / subheading (mono) */
+.h-script { font-family: var(--script); font-weight: 400; line-height: .9; letter-spacing: 0; }
+.h-xl { font-size: clamp(54px, 10.5vw, 120px); }
+.h-lg { font-size: clamp(44px, 7.5vw, 90px); }
+.h-md { font-size: clamp(34px, 5vw, 60px); }
+.title { font-family: var(--serif); font-weight: 400; line-height: 1.2; font-size: clamp(24px, 3vw, 30px); }
+.para { font-family: var(--serif); font-size: clamp(17px, 1.6vw, 19px); line-height: 1.6; }
+.mono { font-family: var(--mono); font-size: 11px; line-height: 1.8; text-transform: uppercase; letter-spacing: .05em; }
+.center { text-align: center; }
+.rule { border: 0; border-top: 1px solid var(--ink); width: 100%; }
+
+/* buttons = .st-primary / .st-secondary of the template */
+.btn { display: inline-flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 11px; line-height: 1.8;
+  text-transform: uppercase; letter-spacing: .05em; padding: 14px 34px; border: 1px solid var(--ink); background: var(--mist); color: var(--ink);
+  cursor: pointer; transition: background-color .5s, color .5s, border-color .5s; }
+.btn:hover { background: var(--ink); color: #FAF7EB; border-color: #FAF7EB; }
+.btn.dark { background: var(--ink); color: #FAF7EB; border-color: #FAF7EB; }
+.btn.dark:hover { background: #FAF7EB; color: rgba(46,27,20,.7); border-color: rgba(46,27,20,.7); }
+.btn.light { background: #FEFCEB; color: var(--ink); border-color: #FEFCEB; }
+.btn.light:hover { background: transparent; color: #FEFCEB; }
+.btn.big { padding: 18px 46px; font-size: 12px; }
+
+.photo { border: 1px solid var(--ink); background-size: cover; background-position: 50% 40%; background-repeat: no-repeat; background-color: var(--sand); }
+
+/* ---------- countdown ---------- */
+.cd { display: inline-flex; gap: 0; border: 1px solid var(--ink); background: rgba(254,252,235,.55); }
+.cd > div { min-width: clamp(64px, 14vw, 92px); padding: 10px 6px 8px; text-align: center; border-left: 1px solid var(--ink); }
+.cd > div:first-child { border-left: 0; }
+.cd b { display: block; font-family: var(--serif); font-weight: 400; font-variant-numeric: lining-nums; font-size: clamp(34px, 7vw, 52px); line-height: 1; font-variant-numeric: lining-nums tabular-nums; }
+.cd span { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.on-dark .cd { border-color: #FAF7EB; background: transparent; color: #FAF7EB; }
+.on-dark .cd > div { border-color: #FAF7EB; }
+
+/* =============== 1. HERO =============== */
+.hero { position: relative; padding: 48px 0 56px; text-align: center; animation: heroBg 5.25s infinite; }
+@keyframes heroBg { 0%,28% { background: var(--mist); } 33%,61% { background: var(--cream-2); } 66%,94% { background: var(--sand); } 100% { background: var(--mist); } }
+.hero .eyebrow { display: inline-flex; gap: 14px; align-items: center; margin-bottom: 22px; }
+.hero .eyebrow i { width: 7px; height: 7px; border-radius: 50%; background: var(--ink); animation: pulse 1.4s infinite; }
+@keyframes pulse { 50% { opacity: .2; } }
+.hero h1 { margin-bottom: 6px; }
+.hero .sub { font-size: clamp(24px, 3.4vw, 34px); line-height: 1.2; margin-bottom: 6px; }
+.stage { position: relative; width: min(546px, 94%); aspect-ratio: 546 / 390; margin: 18px auto 10px; }
+.stage .p { border-radius: 50%; position: absolute; left: 15.9%; top: 18.5%; width: 68.3%; height: 63.1%; background-size: 175%; background-position: 66% 62%; background-repeat: no-repeat; }
+.stage .f { position: absolute; inset: 0; background: url('https://static.showit.co/800/AIAkJKcHWvkqQg11CMdi5A/111471/frame30_1.png') center/100% 100% no-repeat; }
+.price { display: flex; align-items: baseline; justify-content: center; gap: 12px; margin: 4px 0 4px; flex-wrap: wrap; }
+.price .h-script { font-family: var(--serif); font-variant-numeric: lining-nums; font-size: clamp(72px, 14vw, 140px); line-height: .85; letter-spacing: -.01em; }
+.price .cur { font-family: var(--serif); font-weight: 400; font-size: clamp(34px, 7vw, 64px); letter-spacing: .01em; text-transform: lowercase; line-height: 1; }
+.nocharge { display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; margin: 6px 0 24px; }
+.nocharge span::before { content: "\2014\00a0"; }
+.hero .cta-row { display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.urgent { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+
+/* =============== 2. TRUST =============== */
+.trust { padding: 90px 0 80px; text-align: center; }
+.trust .h-lg { margin-bottom: 26px; }
+.trust p { max-width: 640px; margin: 0 auto; font-size: clamp(22px, 2.6vw, 28px); line-height: 1.35; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 56px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.stats > div { padding: 26px 8px; border-left: 1px solid var(--ink); }
+.stats > div:first-child { border-left: 0; }
+.stats b { display: block; font-family: var(--serif); font-weight: 400; font-variant-numeric: lining-nums; font-size: clamp(44px, 8vw, 76px); line-height: 1; margin-bottom: 10px; }
+
+.big-num { font-size: 1.8em; line-height: .6; }
+
+/* =============== 3. PROMISE =============== */
+.promise { padding: 30px 0 100px; }
+.promise .grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 6vw, 90px); align-items: center; }
+.promise .photo { aspect-ratio: 526 / 700; width: 100%; }
+.promise .title { margin-bottom: 22px; }
+.promise .title span { display: block; white-space: nowrap; font-size: clamp(22px, 4.6vw, 38px); line-height: 1.25; }
+.promise .title span:nth-child(2) { padding-left: 1.2em; }
+.promise .title span:nth-child(3) { padding-left: 2.4em; }
+.promise .para + .para { margin-top: 1em; }
+.promise .btn { margin-top: 30px; }
+
+/* =============== 4. WHAT YOU GET =============== */
+.get { padding: 40px 0 100px; }
+.get .head { text-align: center; margin-bottom: 44px; }
+.get ul { list-style: none; border-top: 1px solid var(--ink); }
+.get li { display: grid; grid-template-columns: 70px 1fr auto; gap: 20px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid var(--ink); }
+.get li .n { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; }
+.get li .t { font-size: clamp(22px, 2.8vw, 30px); line-height: 1.2; }
+.get li .d { font-size: 17px; max-width: 360px; text-align: right; }
+
+/* =============== 5. PHOTOS =============== */
+.photos { padding: 0 0 110px; }
+.photos .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 22px; align-items: start; }
+.photos figure .photo { width: 100%; }
+.photos figcaption { margin-top: 10px; }
+.ph1 { grid-column: 1 / span 5; } .ph1 .photo { aspect-ratio: 592 / 808; }
+.ph2 { grid-column: 7 / span 6; margin-top: 140px; } .ph2 .photo { aspect-ratio: 658 / 801; }
+.ph3 { grid-column: 2 / span 3; } .ph3 .photo { aspect-ratio: 240 / 276; }
+.ph4 { grid-column: 5 / span 3; margin-top: 60px; } .ph4 .photo { aspect-ratio: 240 / 276; }
+.ph5 { grid-column: 9 / span 4; margin-top: -40px; } .ph5 .photo { aspect-ratio: 343 / 289; }
+
+/* =============== 6. TWO STYLES (black, like Packages) =============== */
+.styles { background: var(--night); color: #FAF7EB; padding: 70px 0 0; }
+.styles .intro { text-align: center; max-width: 720px; margin: 0 auto 56px; font-size: clamp(22px, 2.6vw, 28px); line-height: 1.35; }
+.styles .panels { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #FAF7EB; }
+.styles .panel { position: relative; min-height: clamp(420px, 60vw, 733px); background-size: cover; background-position: 50% 50%; display: flex; align-items: flex-start; }
+.styles .panel + .panel { border-left: 1px solid #FAF7EB; }
+.styles .panel::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.28); }
+.styles .panel .h-script { position: relative; padding: clamp(24px, 4vw, 51px) clamp(20px, 4vw, 40px); font-size: clamp(44px, 7vw, 90px); color: #FAF7EB; }
+
+/* =============== 7. OFFER =============== */
+.offer { padding: 110px 0; text-align: center; background: var(--cream); }
+.offer .box { border: 1px solid var(--ink); padding: clamp(36px, 6vw, 80px) clamp(20px, 5vw, 70px); position: relative; background: var(--cream-2); }
+.offer .tag { position: absolute; left: 50%; top: 0; transform: translate(-50%, -50%); background: var(--ink); color: #FAF7EB; padding: 6px 18px; }
+.offer .title { max-width: 560px; margin: 0 auto 8px; }
+.offer .price { margin-top: 10px; }
+.offer ul { list-style: none; display: inline-block; text-align: left; margin: 26px auto 34px; }
+.offer li { padding: 6px 0; font-size: 20px; }
+.offer li::before { content: "\2014"; margin-right: 14px; }
+.offer .cd { margin-bottom: 30px; }
+.offer .urgent { display: block; margin-bottom: 12px; }
+.guarantee { margin-top: 30px; font-size: clamp(20px, 2.3vw, 24px); font-style: italic; }
+
+/* =============== 8. TESTIMONIALS =============== */
+.testi { padding: 20px 0 110px; }
+.testi .head { text-align: center; margin-bottom: 56px; }
+.testi .head .mono { margin-top: 14px; display: block; }
+.feat { position: relative; min-height: 330px; margin-bottom: 70px; }
+.feat .slide { position: absolute; inset: 0 0 auto 0; text-align: center; opacity: 0; visibility: hidden; transition: opacity .5s, visibility 0s .5s; }
+.feat .slide.on { opacity: 1; visibility: visible; transition: opacity .5s; position: relative; }
+.feat blockquote { max-width: 800px; margin: 0 auto 22px; font-size: clamp(22px, 3vw, 32px); line-height: 1.35; }
+.feat blockquote::before { content: "\201C"; display: block; font-family: var(--script); font-size: 70px; line-height: .6; margin-bottom: 10px; }
+.dots { display: flex; gap: 12px; justify-content: center; margin-top: 30px; }
+.dots button { width: 10px; height: 10px; border-radius: 50%; border: 0; background: rgba(46,27,20,.25); cursor: pointer; padding: 0; }
+.dots button.on { background: var(--ink); }
+.wall { columns: 3; column-gap: 22px; }
+.wall figure { break-inside: avoid; border: 1px solid var(--ink); background: var(--cream-2); padding: 24px 22px 18px; margin-bottom: 22px; }
+.wall blockquote { font-size: 22px; line-height: 1.3; margin-bottom: 14px; }
+.wall figcaption { display: flex; justify-content: space-between; gap: 10px; border-top: 1px solid var(--ink); padding-top: 10px; }
+
+/* =============== 9. PROCESS =============== */
+.steps { padding: 0 0 110px; }
+.steps .head { text-align: center; margin-bottom: 50px; }
+.steps .cols { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+.steps .col { padding: 40px 28px 44px; border-left: 1px solid var(--ink); }
+.steps .col:first-child { border-left: 0; }
+.steps .col .h-script { font-family: var(--serif); font-variant-numeric: lining-nums; font-size: clamp(64px, 9vw, 100px); line-height: .9; margin-bottom: 16px; }
+.steps .col .title { margin-bottom: 8px; }
+.steps .note { max-width: 700px; margin: 40px auto 0; text-align: center; font-size: clamp(20px, 2.4vw, 26px); line-height: 1.4; }
+
+/* =============== 10. FINAL CTA (black, like Inquiry) =============== */
+.final { position: relative; background: var(--night); color: #FAF7EB; text-align: center; padding: 110px 0 120px; overflow: hidden; }
+.final .reel { position: absolute; inset: 0; opacity: .5; }
+.final .reel .ssg-slider { height: 100%; }
+.final .inner { position: relative; z-index: 3; text-shadow: 0 0 24px rgba(0,0,0,.6); }
+.final .title { margin: 10px 0 30px; font-size: clamp(26px, 3.4vw, 36px); }
+.final .cd { margin-bottom: 34px; }
+.final .note { margin-top: 28px; }
+.final .small { max-width: 520px; margin: 22px auto 0; font-size: 20px; }
+.final .reel + .veil { position: absolute; inset: 0; background: rgba(0,0,0,.35); z-index: 2; }
+
+/* gallery (filmstrip) */
+.sg-sl { position: relative; overflow: hidden; width: 100%; height: 100%; }
+.ssg-slider.filmstrip { position: relative; width: 100%; height: 100%; overflow: hidden; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; }
+.ssg-slider.filmstrip.is-dragging { cursor: grabbing; }
+.ssg-slider.filmstrip .ssg-slider-cell { position: absolute; top: 0; left: 0; height: 100%; width: auto; max-width: none; display: block; -webkit-user-drag: none; will-change: transform; }
+.flickity-page-dots { position: absolute; left: 0; bottom: 18px; width: 100%; list-style: none; text-align: center; line-height: 0; z-index: 2; }
+.flickity-page-dots .dot { display: inline-block; width: 10px; height: 10px; margin: 0 5px; background: rgba(255,255,255,.35); border-radius: 50%; cursor: pointer; }
+.flickity-page-dots .dot.is-selected { background: #fff; }
+
+/* sticky conversion bar (not a header / footer: it only appears while scrolling) */
+.sticky { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; background: var(--ink); color: #FAF7EB; display: flex; align-items: center;
+  justify-content: center; gap: 18px; padding: 10px 16px; transform: translateY(110%); transition: transform .4s; border-top: 1px solid #FAF7EB; }
+.sticky.show { transform: none; }
+.sticky .mono b { font-weight: 400; font-size: 14px; letter-spacing: .08em; font-variant-numeric: tabular-nums; }
+.sticky .btn { padding: 10px 22px; }
+
+.rev { opacity: 0; transform: translateY(26px); transition: opacity .9s ease, transform .9s ease; }
+.rev.in { opacity: 1; transform: none; }
+
+@media (max-width: 860px) {
+  .promise .grid { grid-template-columns: 1fr; }
+  .promise .photo { max-width: 460px; margin: 0 auto; }
+  .get li { grid-template-columns: 44px 1fr; }
+  .get li .d { grid-column: 2; text-align: left; max-width: none; }
+  .photos .grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+  .ph1, .ph2, .ph3, .ph4, .ph5 { grid-column: auto; margin-top: 0; }
+  .ph2 { margin-top: 50px; } .ph5 { grid-column: 1 / -1; }
+  .styles .panels { grid-template-columns: 1fr; }
+  .styles .panel + .panel { border-left: 0; border-top: 1px solid #FAF7EB; }
+  .wall { columns: 1; }
+  .steps .cols { grid-template-columns: 1fr; }
+  .steps .col { border-left: 0; border-top: 1px solid var(--ink); }
+  .steps .col:first-child { border-top: 0; }
+  .stats b { font-size: 44px; }
+  .sticky .mono.hide-s { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .hero { animation: none; } .rev { opacity: 1; transform: none; transition: none; } .hero .eyebrow i { animation: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<!-- ===== 1. HERO ===== -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow mono"><i></i><span>Limited 2026/2027 bookings &middot; Exclusive by lxfilmspro</span></div>
+    <h1 class="h-script h-xl">Exclusive Nine Hours</h1>
+    <p class="title sub">Wedding Photo &amp; Video Coverage</p>
+    <div class="stage"><div class="p photo-img" data-img="images/LX-05518.jpg"></div><div class="f"></div></div>
+    <div class="price"><span class="cur">SGD</span><span class="h-script">2499</span></div>
+    <div class="nocharge mono"><span>no hidden charge</span><span>no extra charge</span></div>
+    <div class="cta-row">
+      <div><span class="urgent">Promo ends in</span><div style="height:8px"></div><div class="cd" data-cd></div></div>
+      <a class="btn big dark" data-cta href="#book">Book your date</a>
+      <span class="mono" data-slots>Slots are limited &mdash; we personally handle every wedding</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2. TRUST ===== -->
+<section class="trust">
+  <div class="wrap rev">
+    <h2 class="h-script h-lg">Trusted by <span class="big-num">100+</span> Couples</h2>
+    <p>Not because we promise big things,<br>but because we show up &mdash;<br>calm, prepared, and fully present.</p>
+    <div class="stats mono">
+      <div><b>100+</b>Couples we shots!</div>
+      <div><b>9</b>Hours coverage</div>
+      <div><b>4</b>Years of experience</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. PROMISE ===== -->
+<section class="promise">
+  <div class="wrap grid">
+    <div class="photo photo-img rev" data-img="images/LX-04643-1.jpg" style="background-position:50% 30%"></div>
+    <div class="rev">
+      <p class="mono" style="margin-bottom:14px">The promise</p>
+      <h2 class="title"><span>Kita nak setiap pelukan,</span><span>setiap senyuman,</span><span>setiap air mata bahagia</span></h2>
+      <p class="para">dirakam cantik dan kekal selamanya.</p>
+      <p class="para">Bila hari tu tiba&hellip; kita tak nak terlepas satu pun detik penting.</p>
+      <p class="para">Every moment is carefully captured, curated, and preserved, nothing rushed, nothing forced.</p>
+      <a class="btn dark" data-cta href="#book">Check my date</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. WHAT YOU GET ===== -->
+<section class="get">
+  <div class="wrap">
+    <div class="head rev"><p class="mono" style="margin-bottom:12px">One price, everything clear</p><h2 class="h-script h-lg">What you get</h2></div>
+    <ul class="rev">
+      <li><span class="n">01</span><span class="t">9 hours of exclusive coverage</span><span class="d">Photo &amp; video sekali, menyulam kisah cinta jadi kenangan yang tak pernah pudar.</span></li>
+      <li><span class="n">02</span><span class="t">Premium Films &middot; Classic Vibes</span><span class="d">A touch of soft shadow with photo &amp; video, together.</span></li>
+      <li><span class="n">03</span><span class="t">We personally handle every wedding</span><span class="d">Starting 2026 onwards, no 3rd shooters.</span></li>
+      <li><span class="n">04</span><span class="t">No hidden charge, no extra charge</span><span class="d">SGD 2499. The price you see is the price you pay.</span></li>
+      <li><span class="n">05</span><span class="t">Money back guarantee policy</span><span class="d">Don&rsquo;t worry, don&rsquo;t be nervous.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 5. PHOTOS ===== -->
+<section class="photos">
+  <div class="wrap grid">
+    <figure class="ph1 rev"><div class="photo photo-img" data-img="images/LX-07906.jpg"></div><figcaption class="mono">Premium Films</figcaption></figure>
+    <figure class="ph2 rev"><div class="photo photo-img" data-img="images/LX-02696.jpg"></div><figcaption class="mono">Classic Vibes</figcaption></figure>
+    <figure class="ph3 rev"><div class="photo photo-img" data-img="images/LX-02790.jpg"></div></figure>
+    <figure class="ph4 rev"><div class="photo photo-img" data-img="images/LX-02870.jpg"></div></figure>
+    <figure class="ph5 rev"><div class="photo photo-img" data-img="images/LX-06644.jpg" style="background-position:50% 60%"></div></figure>
+  </div>
+</section>
+
+<!-- ===== 6. TWO STYLES ===== -->
+<section class="styles on-dark">
+  <div class="wrap"><p class="intro rev">A touch of soft shadow with Photo &amp; video sekali, menyulam kisah cinta jadi kenangan yang tak pernah pudar.</p></div>
+  <div class="panels">
+    <div class="panel photo-img" data-img="images/LX-01846.jpg"><h2 class="h-script">Premium Films</h2></div>
+    <div class="panel photo-img" data-img="images/LX-02677.jpg" style="background-position:50% 80%"><h2 class="h-script">Classic Vibes</h2></div>
+  </div>
+</section>
+
+<!-- ===== 7. OFFER ===== -->
+<section class="offer" id="offer">
+  <div class="wrap">
+    <div class="box rev">
+      <span class="tag mono">Limited offer</span>
+      <h2 class="title">Exclusive 9 Hours Wedding Photo &amp; Video Coverage</h2>
+      <div class="price"><span class="cur">SGD</span><span class="h-script">2499</span></div>
+      <ul class="para"><li>no hidden charge</li><li>no extra charge</li><li>exclusive by lxfilmspro</li></ul>
+      <div><span class="urgent">Promo ends in</span><div style="height:8px"></div><div class="cd" data-cd></div></div>
+      <div style="height:30px"></div>
+      <a class="btn big dark" data-cta href="#book">Reserve my date</a>
+      <p class="guarantee">Don&rsquo;t worry, don&rsquo;t be nervous &mdash; we got money back guarantee policy!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. TESTIMONIALS ===== -->
+<section class="testi">
+  <div class="wrap">
+    <div class="head rev"><h2 class="h-script h-lg">From the heart</h2><span class="mono">Real messages from our couples</span></div>
+    <div class="feat rev" id="feat">
+      <div class="slide on"><blockquote>Menangis saya tengok &#x1F62D; Cantik gileee &#x1FAF6;&#x1FAF6;&#x1FAF6; In shaa Allah kalau lain kali saya boleh recommend dekat orang lain pulak ya</blockquote><span class="mono">Pengantin &middot; Ipoh</span></div>
+      <div class="slide"><blockquote>Dah received album dahh. Aaaa love sangat. Terima kasih banyak juga sebab ambil gambar kami semua cantik cantik. Tak menyesal hire.</blockquote><span class="mono">Pengantin &middot; Bangi</span></div>
+      <div class="slide"><blockquote>Nak bagi honest review utk my nikah punya video. Video nikah tu sangat sangat perfect &#x1F4AF;. Kita org memang suka sangat sangat.</blockquote><span class="mono">Pengantin &middot; Ipoh</span></div>
+      <div class="slide"><blockquote>Just to inform album and frame dah received. Cantik sangatttt memang puas hati.</blockquote><span class="mono">Pengantin LX</span></div>
+      <div class="dots"></div>
+    </div>
+    <div class="wall">
+      <figure class="rev"><blockquote>Cantik sgt dah video akan nikah tu, kene dgn lagu apa semua</blockquote><figcaption class="mono"><span>Pengantin LX</span><span>Video</span></figcaption></figure>
+      <figure class="rev"><blockquote>Okay dah tengok video teaserrr cantiknyaaa &#x1F60D;&#x1F60D;&#x1F60D; terima kasih afif and team</blockquote><figcaption class="mono"><span>Pengantin &middot; Kajang</span><span>Teaser</span></figcaption></figure>
+      <figure class="rev"><blockquote>Okeh thank you! Gambar sangat lawa &#x1F60D;</blockquote><figcaption class="mono"><span>Pengantin &middot; KLGCC</span><span>Photo</span></figcaption></figure>
+      <figure class="rev"><blockquote>CANTIK NYA COVER PAGE PUN EEEEEEEE</blockquote><figcaption class="mono"><span>Pengantin LX</span><span>Album</span></figcaption></figure>
+      <figure class="rev"><blockquote>Cantikkkk sangattt. Semua okayyyyy</blockquote><figcaption class="mono"><span>Pengantin LX</span><span>Photo</span></figcaption></figure>
+      <figure class="rev"><blockquote>Ooo dah ade. Cantikkkk, Fuhh kemahh</blockquote><figcaption class="mono"><span>Pengantin LX</span><span>Photo</span></figcaption></figure>
+      <figure class="rev"><blockquote>Tapi cantik. Suka!!</blockquote><figcaption class="mono"><span>Pengantin &middot; Kajang</span><span>Photo</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. PROCESS ===== -->
+<section class="steps">
+  <div class="wrap">
+    <div class="head rev"><h2 class="h-script h-lg">Complete transparency</h2></div>
+    <div class="cols rev">
+      <div class="col"><div class="h-script">1</div><h3 class="title">We meet</h3><p class="para">Setiap client bagi kami adalah sebuah amanah. A responsibility we carry with pride.</p></div>
+      <div class="col"><div class="h-script">2</div><h3 class="title">We plan</h3><p class="para">Jika sesuatu itu tidak selari dengan your dreams &amp; moodboard, kami akan jujur dari awal.</p></div>
+      <div class="col"><div class="h-script">3</div><h3 class="title">We move</h3><p class="para">Nothing rushed, nothing forced. We show up &mdash; calm, prepared, and fully present.</p></div>
+    </div>
+    <p class="note rev">Starting 2026 onwards, we personally handle every wedding, no 3rd shooters.</p>
+  </div>
+</section>
+
+<!-- ===== 10. FINAL CTA ===== -->
+<section class="final on-dark" id="book">
+  <div class="reel"><div class="sg-sl" data-gallery><div class="ssg-slider filmstrip">
+    <img class="ssg-slider-img ssg-slider-cell" src="images/LX-01491.jpg" data-ar="0.66667" alt="">
+    <img class="ssg-slider-img ssg-slider-cell" src="images/LX-01817.jpg" data-ar="0.66667" alt="">
+    <img class="ssg-slider-img ssg-slider-cell" src="images/LX-03459.jpg" data-ar="0.66667" alt="">
+    <img class="ssg-slider-img ssg-slider-cell" src="images/LX-02550.jpg" data-ar="0.66667" alt="">
+    <img class="ssg-slider-img ssg-slider-cell" src="images/LX-06940.jpg" data-ar="0.66667" alt="">
+    <img class="ssg-slider-img ssg-slider-cell" src="images/LX-07872.jpg" data-ar="0.66667" alt="">
+    <img class="ssg-slider-img ssg-slider-cell" src="images/LX-06488.jpg" data-ar="0.66667" alt="">
+    <img class="ssg-slider-img ssg-slider-cell" src="images/LX-06752.jpg" data-ar="0.66667" alt="">
+  </div></div></div>
+  <div class="veil"></div>
+  <div class="wrap inner">
+    <p class="mono">Limited 2026/2027 bookings</p>
+    <h2 class="h-script h-xl" style="margin-top:12px">Begin your experience.</h2>
+    <p class="title">Exclusive 9 Hours Wedding Photo &amp; Video Coverage &mdash; SGD 2499</p>
+    <div><span class="urgent">Promo ends in</span><div style="height:8px"></div><div class="cd" data-cd></div></div>
+    <div style="height:34px"></div>
+    <a class="btn big light" data-cta href="#book">Book my date now</a>
+    <p class="small">Don&rsquo;t worry, don&rsquo;t be nervous &mdash; we got money back guarantee policy!</p>
+    <p class="mono note">no hidden charge &middot; no extra charge &middot; exclusive by lxfilmspro</p>
+  </div>
+</section>
+
+<!-- sticky conversion bar -->
+<div class="sticky" id="sticky">
+  <span class="mono hide-s">Promo ends in</span><span class="mono"><b data-cd-short>--:--:--:--</b></span>
+  <a class="btn light" data-cta href="#book">Book your date</a>
+</div>
+
+<script>
+/* ============ EDIT THESE ============ */
+const CONFIG = {
+  deadline: "2026-10-30T23:59:59+08:00",   // promo end (Singapore time). SET A REAL DATE - the countdown is only honest if the promo really ends then
+  slotsLeft: null,                          // e.g. 3  -> "Only 3 slots left". null = generic "limited" wording (don't claim a number unless it's true)
+  whatsapp: "",                             // e.g. "6591234567" (country code, no +). Empty = opens WhatsApp without a number
+  message: "Hi, I'd like to check availability for the Exclusive 9 Hours Wedding Photo & Video Coverage (SGD 2499)."
+};
+/* ==================================== */
+
+// call-to-action links
+const waUrl = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(CONFIG.message);
+document.querySelectorAll("[data-cta]").forEach(a => { a.href = waUrl; a.target = "_blank"; a.rel = "noopener"; });
+if (CONFIG.slotsLeft) document.querySelector("[data-slots]").textContent = "Only " + CONFIG.slotsLeft + " slot" + (CONFIG.slotsLeft > 1 ? "s" : "") + " left for this offer";
+
+// photo slots
+document.querySelectorAll("[data-img]").forEach(el => { el.style.backgroundImage = 'url("' + el.dataset.img + '")'; });
+
+// countdown
+const end = new Date(CONFIG.deadline).getTime(), pad = n => String(n).padStart(2, "0");
+const boxes = document.querySelectorAll("[data-cd]");
+boxes.forEach(b => b.innerHTML = ["Days","Hours","Min","Sec"].map(l => '<div><b>00</b><span>' + l + '</span></div>').join(""));
+function tick() {
+  let s = Math.max(0, Math.floor((end - Date.now()) / 1000));
+  const v = [Math.floor(s / 86400), Math.floor(s % 86400 / 3600), Math.floor(s % 3600 / 60), s % 60];
+  boxes.forEach(b => b.querySelectorAll("b").forEach((n, i) => n.textContent = pad(v[i])));
+  document.querySelector("[data-cd-short]").textContent = v.map(pad).join(":");
+  if (s === 0) document.querySelectorAll(".urgent").forEach(u => u.textContent = "Promo ended - ask about the next available date");
+}
+tick(); setInterval(tick, 1000);
+
+// sticky bar: show after the hero, hide again at the final CTA
+const sticky = document.getElementById("sticky"), hero = document.getElementById("top"), fin = document.getElementById("book");
+function stick() {
+  const past = hero.getBoundingClientRect().bottom < 0, atEnd = fin.getBoundingClientRect().top < innerHeight * .6;
+  sticky.classList.toggle("show", past && !atEnd);
+}
+addEventListener("scroll", stick, { passive: true }); stick();
+
+// reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll(".rev").forEach(el => io.observe(el));
+
+// featured testimonial slider
+(function () {
+  const root = document.getElementById("feat"), slides = [...root.querySelectorAll(".slide")], dots = root.querySelector(".dots");
+  let i = 0, t;
+  slides.forEach((_, k) => { const b = document.createElement("button"); b.setAttribute("aria-label", "Testimonial " + (k + 1)); b.onclick = () => { go(k); auto(); }; dots.appendChild(b); });
+  function go(k) {
+    i = k; slides.forEach((s, n) => s.classList.toggle("on", n === k)); [...dots.children].forEach((d, n) => d.classList.toggle("on", n === k));
+    root.style.minHeight = "";
+  }
+  function auto() { clearInterval(t); if (!matchMedia("(prefers-reduced-motion: reduce)").matches) t = setInterval(() => go((i + 1) % slides.length), 6000); }
+  go(0); auto();
+})();
+
+// filmstrip (drag, dots, wrap-around, autoplay)
+(function () {
+  document.querySelectorAll("[data-gallery]").forEach(root => {
+    const slider = root.querySelector(".ssg-slider"), cells = [...slider.querySelectorAll(".ssg-slider-cell")];
+    const ar = cells.map(c => parseFloat(c.dataset.ar) || .667), xs = [], ws = [];
+    let total = 0, H = 0, C = 0, pos = 0, target = 0, sel = 0, dragging = false, anim = 0, timer, scale = 1;
+    const dots = document.createElement("ol"); dots.className = "flickity-page-dots";
+    cells.forEach((_, i) => { const li = document.createElement("li"); li.className = "dot"; li.onclick = () => { go(i); restart(); }; dots.appendChild(li); });
+    slider.appendChild(dots);
+    const center = i => xs[i] + ws[i] / 2, wrap = v => ((v + total / 2) % total + total) % total - total / 2;
+    function measure() { H = slider.offsetHeight; C = slider.offsetWidth; total = 0; cells.forEach((c, i) => { ws[i] = H * ar[i]; xs[i] = total; total += ws[i]; }); scale = C ? slider.getBoundingClientRect().width / C : 1; }
+    function render() {
+      let best = 1e9, n = 0;
+      cells.forEach((c, i) => { const rel = wrap(center(i) - pos); c.style.width = ws[i] + "px"; c.style.translate = (C / 2 + rel - ws[i] / 2).toFixed(1) + "px 0"; if (Math.abs(rel) < best) { best = Math.abs(rel); n = i; } });
+      if (n !== sel || !dots.children[n].classList.contains("is-selected")) { sel = n; [...dots.children].forEach((d, k) => d.classList.toggle("is-selected", k === n)); }
+    }
+    function tick() { pos += (target - pos) * .14; if (Math.abs(target - pos) < .2) { pos = target; anim = 0; render(); return; } render(); anim = requestAnimationFrame(tick); }
+    function go(i) { target = pos + wrap(center(i) - pos); if (!anim && !dragging) anim = requestAnimationFrame(tick); }
+    function restart() { clearInterval(timer); if (!matchMedia("(prefers-reduced-motion: reduce)").matches) timer = setInterval(() => { if (!dragging && !document.hidden) go((sel + 1) % cells.length); }, 2400); }
+    let sx = 0, sp = 0, lx = 0, lt = 0, vel = 0;
+    slider.addEventListener("pointerdown", e => { dragging = true; cancelAnimationFrame(anim); anim = 0; sx = lx = e.clientX; sp = pos; lt = performance.now(); vel = 0; slider.classList.add("is-dragging"); slider.setPointerCapture(e.pointerId); });
+    slider.addEventListener("pointermove", e => { if (!dragging) return; const now = performance.now(); pos = sp - (e.clientX - sx) / scale; vel = (e.clientX - lx) / scale / Math.max(1, now - lt); lx = e.clientX; lt = now; render(); });
+    const end = () => { if (!dragging) return; dragging = false; slider.classList.remove("is-dragging"); const pr = pos - vel * 180; let b = 0, bd = 1e9; cells.forEach((c, i) => { const d = Math.abs(wrap(center(i) - pr)); if (d < bd) { bd = d; b = i; } }); target = pos + wrap(center(b) - pos); anim = requestAnimationFrame(tick); restart(); };
+    slider.addEventListener("pointerup", end); slider.addEventListener("pointercancel", end);
+    cells.forEach(c => c.draggable = false);
+    const relayout = () => { measure(); pos = target = pos; render(); };
+    measure(); pos = target = center(0); render(); restart();
+    addEventListener("resize", relayout); addEventListener("load", relayout);
+  });
+})();
+</script>
+</body>
+</html>

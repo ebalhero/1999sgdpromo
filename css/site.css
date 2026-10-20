@@ -1,0 +1,48 @@
+/* Replacement for the behaviour that the Showit engine applied at runtime.
+   Geometry itself comes from page.css (per-element positions) and js/layout.js (scaling / edge locking). */
+html, body { margin: 0; padding: 0; }
+body { min-width: 320px; }
+
+/* image slots: crop/zoom/position per slot is defined in page.css (.sie-<id> .se-img); sources in images.css */
+.se-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-repeat: no-repeat; }
+[data-img="menu-open_bg"] { background-size: cover; background-position: 50% 50%; }
+
+/* view (state) switching - hero cross-fades, testimonials / portfolio swap instantly (stateTrans is empty in source) */
+.ss { display: block; visibility: hidden; opacity: 0; }
+.ss.sactive { visibility: visible; opacity: 1; }
+.sb-fade .ss { transition: opacity .5s ease, visibility 0s linear .5s; }
+.sb-fade .ss.sactive { transition: opacity .5s ease, visibility 0s linear 0s; }
+.se-stl { cursor: pointer; }
+
+/* full-screen menu overlay (mobile only) */
+.sib-menu-open { position: fixed; top: 0; left: 0; width: 100%; min-width: 320px; display: block !important;
+  opacity: 0; visibility: hidden; transition: opacity .4s ease, visibility 0s linear .4s; }
+.sib-menu-open.is-open { opacity: 1; visibility: visible; transition: opacity .4s ease, visibility 0s; }
+.d .sib-menu-open { display: none !important; }
+.sib-menu-open .sb-m { opacity: .6; }
+.se-pc { cursor: pointer; }
+body.menu-lock { overflow: hidden; }
+
+/* page.css hides some template notes; keep them hidden */
+.sib-note-can-delete-hide-2 { display: none !important; }
+
+/* gallery (own implementation of the Showit/Flickity "filmstrip") */
+.sg-sl { position: relative; overflow: hidden; width: 100%; height: 100%; }
+.ssg-slider.filmstrip { position: relative; overflow: hidden; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; }
+.ssg-slider.filmstrip.is-dragging { cursor: grabbing; }
+.ssg-slider.filmstrip .ssg-slider-cell { position: absolute; top: 0; left: 0; height: 100%; width: auto; max-width: none;
+  display: block; -webkit-user-drag: none; user-select: none; will-change: transform; }
+.ssg-slider.filmstrip .flickity-page-dots { position: absolute; left: 0; bottom: 0; width: 100%; height: 0; z-index: 2; }
+.ssg-slider.filmstrip .flickity-page-dots .dot { position: relative; top: -22px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .sb-fade .ss, .sib-menu-open { transition: none !important; }
+}
+
+/* Wordmark: live text in the heading script font, replacing the original "Audrey Golightly" logo image (logo-navigation_1) */
+.logo-wordmark { position: absolute; inset: 0; margin: 0; display: flex; align-items: center; justify-content: center; white-space: nowrap;
+  font-family: 'Old Scientific Illustration'; font-weight: 400; color: rgba(46,27,20,1); line-height: 1; text-align: center; }
+.d .logo-wordmark { font-size: 132px; }
+.m .logo-wordmark { font-size: 57px; }
+
+/* NOTE: approach_1 / approach_0 / mobile hero (-55px, hamburger removed) geometry in js/layout-data.js was hand-edited (taller copy box, button moved down) for the client's longer paragraph; re-running tools/build.py would overwrite it. */

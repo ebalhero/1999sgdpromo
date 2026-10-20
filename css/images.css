@@ -1,0 +1,64 @@
+/* IMAGE SOURCES. One rule per image slot - replace the url() to swap a photo (see IMAGE-MAP.md).
+   Crop/zoom/position of each slot lives in page.css (.sie-<id> .se-img) and is untouched. */
+[data-img="menu-open_bg"] { background-image: url("../images/LX-04643-1.jpg"); }
+[data-img="menu-open_8"] { background-image: url("https://static.showit.co/1200/_UyTgpZ1yCCfW5Or3v5p1Q/111471/ag_lettermark_light.png"); }
+[data-img="logo-navigation_1"] { background-image: url("https://static.showit.co/1200/aZyXsjTQRmZXhisGZDLehQ/111471/ag_logo.png"); }
+[data-img="hero_11"] { background-image: url("../images/LX-05518.jpg"); }
+[data-img="hero_12"] { background-image: url("https://static.showit.co/1200/AIAkJKcHWvkqQg11CMdi5A/111471/frame30_1.png"); }
+[data-img="approach_4"] { background-image: url("../images/LX-04643-1.jpg"); }
+[data-img="photos_0"] { background-image: url("../images/LX-03489.jpg"); }
+[data-img="photos_2"] { background-image: url("../images/LX-02785.jpg"); }
+[data-img="photos_3"] { background-image: url("../images/LX-02790.jpg"); }
+[data-img="photos_5"] { background-image: url("../images/LX-06644.jpg"); }
+[data-img="photos_6"] { background-image: url("../images/LX-07906.jpg"); }
+[data-img="photos_7"] { background-image: url("../images/LX-02696.jpg"); }
+[data-img="photos_9"] { background-image: url("../images/LX-02870.jpg"); }
+[data-img="photos_10"] { background-image: url("../images/DSCF1021.jpg"); }
+[data-img="photos_12"] { background-image: url("../images/LX-08410.jpg"); }
+[data-img="photos_13"] { background-image: url("../images/LX-09684.jpg"); }
+[data-img="photos_15"] { background-image: url("../images/DSCF3980.jpg"); }
+[data-img="photos_16"] { background-image: url("../images/LX-00265.jpg"); }
+[data-img="packages_0"] { background-image: url("../images/LX-02677.jpg"); }
+[data-img="packages_2"] { background-image: url("../images/LX-01846.jpg"); }
+[data-img="about-you_0"] { background-image: url("../images/LX-08968.jpg"); }
+[data-img="about-you_5"] { background-image: url("../images/LX-06597.jpg"); }
+[data-img="testimonials_view-1_2"] { background-image: url("../images/LX-08801.jpg"); }
+[data-img="testimonials_view-2_2"] { background-image: url("../images/LX-02314.jpg"); }
+[data-img="testimonials_view-3_2"] { background-image: url("../images/DSCF0993.jpg"); }
+[data-img="portfolio_view-1_4"] { background-image: url("../images/LX-03776.jpg"); }
+[data-img="portfolio_view-1_6"] { background-image: url("../images/LX-03130.jpg"); }
+[data-img="portfolio_view-2_3"] { background-image: url("../images/LX-04683.jpg"); }
+[data-img="portfolio_view-2_4"] { background-image: url("../images/LX-09933.jpg"); }
+[data-img="portfolio_view-3_3"] { background-image: url("../images/LX-08976.jpg"); }
+[data-img="portfolio_view-3_4"] { background-image: url("../images/LX-04242.jpg"); }
+[data-img="footer_20"] { background-image: url("https://static.showit.co/800/sG8o4W96afa5LD1Eyavwqg/111471/ag_favicon.png"); }
+
+/* ===== photos: crop overrides (all `cover`; position = focal point). Wins over page.css by source order. ===== */
+.d .sie-menu-open_bg .se-img, .m .sie-menu-open_bg .se-img { background-size: cover; background-position: 50% 40%; }
+.d .sie-hero_11 .se-img, .m .sie-hero_11 .se-img { background-size: 175%; background-position: 66% 62%; }
+.d .sie-approach_4 .se-img, .m .sie-approach_4 .se-img { background-size: cover; background-position: 50% 30%; }
+.d .sie-photos_0 .se-img, .m .sie-photos_0 .se-img { background-size: cover; background-position: 50% 35%; }
+.d .sie-photos_2 .se-img, .m .sie-photos_2 .se-img { background-size: cover; background-position: 45% 40%; }
+.d .sie-photos_3 .se-img, .m .sie-photos_3 .se-img { background-size: cover; background-position: 50% 40%; }
+.d .sie-photos_5 .se-img, .m .sie-photos_5 .se-img { background-size: cover; background-position: 50% 60%; }
+.d .sie-photos_6 .se-img, .m .sie-photos_6 .se-img { background-size: cover; background-position: 50% 40%; }
+.d .sie-photos_7 .se-img, .m .sie-photos_7 .se-img { background-size: cover; background-position: 50% 45%; }
+.d .sie-photos_9 .se-img, .m .sie-photos_9 .se-img { background-size: cover; background-position: 55% 45%; }
+.d .sie-photos_10 .se-img, .m .sie-photos_10 .se-img { background-size: cover; background-position: 50% 45%; }
+.d .sie-photos_12 .se-img, .m .sie-photos_12 .se-img { background-size: cover; background-position: 50% 50%; }
+.d .sie-photos_13 .se-img, .m .sie-photos_13 .se-img { background-size: cover; background-position: 50% 40%; }
+.d .sie-photos_15 .se-img, .m .sie-photos_15 .se-img { background-size: cover; background-position: 50% 45%; }
+.d .sie-photos_16 .se-img, .m .sie-photos_16 .se-img { background-size: cover; background-position: 50% 40%; }
+.d .sie-packages_2 .se-img, .m .sie-packages_2 .se-img { background-size: cover; background-position: 50% 50%; }
+.d .sie-packages_0 .se-img, .m .sie-packages_0 .se-img { background-size: cover; background-position: 50% 60%; }
+.d .sie-about-you_0 .se-img, .m .sie-about-you_0 .se-img { background-size: cover; background-position: 50% 50%; }
+.d .sie-about-you_5 .se-img, .m .sie-about-you_5 .se-img { background-size: cover; background-position: 50% 45%; }
+.d .sie-testimonials_view-1_2 .se-img, .m .sie-testimonials_view-1_2 .se-img { background-size: cover; background-position: 40% 45%; }
+.d .sie-testimonials_view-2_2 .se-img, .m .sie-testimonials_view-2_2 .se-img { background-size: cover; background-position: 50% 60%; }
+.d .sie-testimonials_view-3_2 .se-img, .m .sie-testimonials_view-3_2 .se-img { background-size: cover; background-position: 50% 35%; }
+.d .sie-portfolio_view-1_6 .se-img, .m .sie-portfolio_view-1_6 .se-img { background-size: cover; background-position: 50% 55%; }
+.d .sie-portfolio_view-1_4 .se-img, .m .sie-portfolio_view-1_4 .se-img { background-size: cover; background-position: 50% 55%; }
+.d .sie-portfolio_view-2_4 .se-img, .m .sie-portfolio_view-2_4 .se-img { background-size: cover; background-position: 50% 55%; }
+.d .sie-portfolio_view-2_3 .se-img, .m .sie-portfolio_view-2_3 .se-img { background-size: cover; background-position: 50% 45%; }
+.d .sie-portfolio_view-3_4 .se-img, .m .sie-portfolio_view-3_4 .se-img { background-size: cover; background-position: 50% 50%; }
+.d .sie-portfolio_view-3_3 .se-img, .m .sie-portfolio_view-3_3 .se-img { background-size: cover; background-position: 50% 55%; }

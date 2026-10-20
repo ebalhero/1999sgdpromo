@@ -1,0 +1,6 @@
+/* Custom font used by the original design for headings (st-d-heading / st-m-heading).
+   Cormorant Garamond and Roboto Mono are loaded from Google Fonts in index.html, exactly as in the source. */
+@font-face {
+  font-family: 'Old Scientific Illustration';
+  src: url('https://static.showit.co/file/Mmg4fyoO-astn3t5jGL9fw/111471/oldscientificillustration.woff');
+}
